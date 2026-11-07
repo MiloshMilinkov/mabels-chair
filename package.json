@@ -1,0 +1,23 @@
+{
+  "name": "mabels-chair",
+  "version": "1.0.0",
+  "description": "Showcase website for a fictional neighbourhood hair studio and barber, Mabel's Chair.",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Miloš Milinkov <milos300399@gmail.com>",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "wrangler dev --port 8791 --ip 127.0.0.1",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.158.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261104.1": true
+  }
+}

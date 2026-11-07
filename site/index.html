@@ -1,0 +1,383 @@
+<!doctype html>
+<!--
+  Mabel's Chair (showcase site)
+  Copyright (c) 2026 Miloš Milinkov. All rights reserved.
+  Proprietary. See the LICENSE file.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mabel's Chair | Hair studio and barber in Novi Sad</title>
+  <meta name="description" content="Mabel's Chair is a small hair studio and barber on Lipova street in Novi Sad. Cuts, colour, curly hair and hot-towel shaves, with tea while you wait.">
+  <meta name="theme-color" content="#7d2b4f">
+  <meta property="og:title" content="Mabel's Chair">
+  <meta property="og:description" content="Pull up a chair. We'll take it from here.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/img/wash.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" as="image" href="/img/wash.webp" fetchpriority="high">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="demo-bar">
+    <p>This is a demo website by Miloš Milinkov. Want one like it for your salon or shop?
+      <a href="https://milos-milinkov.milos300399.workers.dev" rel="noopener">See my work and get in touch</a></p>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Mabel's Chair, back to top">
+        <svg class="brand-mark" viewBox="0 0 40 48" aria-hidden="true">
+          <path d="M4 46 V20 A16 16 0 0 1 36 20 V46 Z" fill="var(--mulberry)"/>
+          <path d="M9 46 V21 A11 11 0 0 1 31 21 V46 Z" fill="var(--mint)"/>
+          <g fill="var(--brass)">
+            <circle cx="6.5" cy="40" r="1.8"/><circle cx="6.5" cy="31" r="1.8"/><circle cx="7.5" cy="21" r="1.8"/>
+            <circle cx="13" cy="10.5" r="1.8"/><circle cx="20" cy="6.6" r="1.8"/><circle cx="27" cy="10.5" r="1.8"/>
+            <circle cx="32.5" cy="21" r="1.8"/><circle cx="33.5" cy="31" r="1.8"/><circle cx="33.5" cy="40" r="1.8"/>
+          </g>
+        </svg>
+        <span class="brand-name">Mabel's Chair</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#work">Our work</a></li>
+          <li><a href="#team">The team</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small" href="#book">Book a visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: the lit vanity mirror is the page's one bold moment -->
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="status" data-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Open Tuesday to Saturday</span></p>
+        <h1>Pull up a chair. We'll take it from here.</h1>
+        <p class="lede">Mabel's is a small hair studio and barber on Lipova street. Cuts, colour, curls and proper hot-towel shaves, with tea while you wait and nobody rushing you out the door.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Book a visit</a>
+          <a class="btn btn-quiet" href="#prices">See prices</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>4.9</strong> from 380 Google reviews</li>
+          <li><strong>Since 2014</strong> on the same corner</li>
+        </ul>
+      </div>
+
+      <figure class="mirror">
+        <svg class="mirror-svg" viewBox="0 0 400 560" role="img" aria-labelledby="mirror-title">
+          <title id="mirror-title">Jovana washing a laughing client's hair at the basin</title>
+          <defs>
+            <clipPath id="mirror-glass">
+              <path d="M52 530 V200 A148 148 0 0 1 348 200 V530 Z"/>
+            </clipPath>
+            <radialGradient id="bulb-glow">
+              <stop offset="0" stop-color="#fff6d8"/>
+              <stop offset=".45" stop-color="#f6d37f"/>
+              <stop offset="1" stop-color="#f6d37f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path class="mirror-frame" d="M30 530 V200 A170 170 0 0 1 370 200 V530 Z"/>
+          <image href="/img/wash.webp" x="52" y="52" width="296" height="478" preserveAspectRatio="xMidYMid slice" clip-path="url(#mirror-glass)"/>
+          <path class="mirror-sheen" d="M80 200 A120 120 0 0 1 170 86" />
+          <rect class="mirror-shelf" x="8" y="526" width="384" height="18" rx="9"/>
+          <g class="bulbs">
+            <g style="--i:0"><circle class="glow" cx="41" cy="500" r="22"/><circle class="bulb" cx="41" cy="500" r="8"/></g>
+            <g style="--i:1"><circle class="glow" cx="41" cy="440" r="22"/><circle class="bulb" cx="41" cy="440" r="8"/></g>
+            <g style="--i:2"><circle class="glow" cx="41" cy="380" r="22"/><circle class="bulb" cx="41" cy="380" r="8"/></g>
+            <g style="--i:3"><circle class="glow" cx="41" cy="320" r="22"/><circle class="bulb" cx="41" cy="320" r="8"/></g>
+            <g style="--i:4"><circle class="glow" cx="41" cy="260" r="22"/><circle class="bulb" cx="41" cy="260" r="8"/></g>
+            <g style="--i:5"><circle class="glow" cx="41" cy="200" r="22"/><circle class="bulb" cx="41" cy="200" r="8"/></g>
+            <g style="--i:6"><circle class="glow" cx="53.1" cy="139.2" r="22"/><circle class="bulb" cx="53.1" cy="139.2" r="8"/></g>
+            <g style="--i:7"><circle class="glow" cx="87.6" cy="87.6" r="22"/><circle class="bulb" cx="87.6" cy="87.6" r="8"/></g>
+            <g style="--i:8"><circle class="glow" cx="139.2" cy="53.1" r="22"/><circle class="bulb" cx="139.2" cy="53.1" r="8"/></g>
+            <g style="--i:9"><circle class="glow" cx="200" cy="41" r="22"/><circle class="bulb" cx="200" cy="41" r="8"/></g>
+            <g style="--i:10"><circle class="glow" cx="260.8" cy="53.1" r="22"/><circle class="bulb" cx="260.8" cy="53.1" r="8"/></g>
+            <g style="--i:11"><circle class="glow" cx="312.4" cy="87.6" r="22"/><circle class="bulb" cx="312.4" cy="87.6" r="8"/></g>
+            <g style="--i:12"><circle class="glow" cx="346.9" cy="139.2" r="22"/><circle class="bulb" cx="346.9" cy="139.2" r="8"/></g>
+            <g style="--i:13"><circle class="glow" cx="359" cy="200" r="22"/><circle class="bulb" cx="359" cy="200" r="8"/></g>
+            <g style="--i:14"><circle class="glow" cx="359" cy="260" r="22"/><circle class="bulb" cx="359" cy="260" r="8"/></g>
+            <g style="--i:15"><circle class="glow" cx="359" cy="320" r="22"/><circle class="bulb" cx="359" cy="320" r="8"/></g>
+            <g style="--i:16"><circle class="glow" cx="359" cy="380" r="22"/><circle class="bulb" cx="359" cy="380" r="8"/></g>
+            <g style="--i:17"><circle class="glow" cx="359" cy="440" r="22"/><circle class="bulb" cx="359" cy="440" r="8"/></g>
+            <g style="--i:18"><circle class="glow" cx="359" cy="500" r="22"/><circle class="bulb" cx="359" cy="500" r="8"/></g>
+          </g>
+        </svg>
+        <figcaption class="mirror-tag">Every wash comes with a ten-minute head massage. Nobody has ever said no.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Prices -->
+    <section class="prices" id="prices" aria-labelledby="prices-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="prices-title">Prices, with no surprises</h2>
+          <p>All prices in dinars. For colour we check your hair first and tell you the exact price before we start.</p>
+        </div>
+
+        <div class="price-board">
+          <div class="price-group">
+            <h3>Cuts and styling</h3>
+            <ul class="price-list">
+              <li><span class="item">Cut and blow-dry</span><span class="price">2.800</span><span class="note">short to shoulder length</span></li>
+              <li><span class="item">Cut and blow-dry, long hair</span><span class="price">3.400</span><span class="note">past the shoulders</span></li>
+              <li><span class="item">Curly cut</span><span class="price">3.600</span><span class="note">cut dry, curl by curl, with Jovana</span></li>
+              <li><span class="item">Wash and blow-dry</span><span class="price">1.800</span><span class="note">for a dinner, a wedding, a Friday</span></li>
+              <li><span class="item">Fringe tidy-up</span><span class="price">free</span><span class="note">for clients, any time between visits</span></li>
+              <li><span class="item">Kids' cut</span><span class="price">1.200</span><span class="note">under twelve, lollipop included</span></li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3>Colour</h3>
+            <ul class="price-list">
+              <li><span class="item">Root colour</span><span class="price">from 3.900</span><span class="note">up to six weeks of regrowth</span></li>
+              <li><span class="item">All-over colour</span><span class="price">from 5.200</span><span class="note">one shade, roots to ends</span></li>
+              <li><span class="item">Balayage</span><span class="price">from 9.500</span><span class="note">hand-painted, soft grow-out</span></li>
+              <li><span class="item">Gloss and tone</span><span class="price">2.600</span><span class="note">brings tired colour back to life</span></li>
+              <li><span class="item">Colour consultation</span><span class="price">free</span><span class="note">fifteen minutes and a strand test</span></li>
+            </ul>
+          </div>
+
+          <div class="price-group price-group-barber">
+            <h3>Barber corner</h3>
+            <ul class="price-list">
+              <li><span class="item">Classic cut</span><span class="price">1.900</span><span class="note">scissors and clippers, washed and styled</span></li>
+              <li><span class="item">Skin fade</span><span class="price">2.200</span><span class="note">as tight or as soft as you like</span></li>
+              <li><span class="item">Beard shape-up</span><span class="price">1.300</span><span class="note">trim, line-up and beard oil</span></li>
+              <li><span class="item">Hot-towel shave</span><span class="price">1.900</span><span class="note">straight razor, two towels, no rush</span></li>
+              <li><span class="item">Cut and beard</span><span class="price">2.900</span><span class="note">the one most people book</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <h2 id="work-title">Fresh out of the chair</h2>
+        <p>A few of last month's regulars, with their permission and their best side.</p>
+      </div>
+      <div class="gallery">
+        <figure class="g-waves">
+          <img src="/img/cut-waves.webp" alt="Long caramel balayage with soft waves, seen from behind against a pink wall" width="900" height="600" loading="lazy">
+          <figcaption>Caramel balayage <span>by Mabel</span></figcaption>
+        </figure>
+        <figure class="g-fade">
+          <img src="/img/cut-fade.webp" alt="Barber cutting a skin fade with a comb and razor at the back of the chair" width="800" height="1200" loading="lazy">
+          <figcaption>Skin fade and beard line-up <span>by Luka</span></figcaption>
+        </figure>
+        <figure class="g-curls">
+          <img src="/img/cut-curls.webp" alt="Full, defined natural curls with lots of volume" width="800" height="800" loading="lazy">
+          <figcaption>Curly cut, shaped dry <span>by Jovana</span></figcaption>
+        </figure>
+        <figure class="g-lilac">
+          <img src="/img/cut-lilac.webp" alt="Very long wavy hair coloured in soft lilac" width="800" height="1200" loading="lazy">
+          <figcaption>Lilac gloss over pre-lightened ends <span>by Sanja</span></figcaption>
+        </figure>
+        <figure class="g-crop">
+          <img src="/img/cut-crop.webp" alt="Textured crop being combed through before styling" width="900" height="600" loading="lazy">
+          <figcaption>Textured crop <span>by Luka</span></figcaption>
+        </figure>
+        <figure class="g-blowout">
+          <img src="/img/cut-blowout.webp" alt="Stylist blow-drying shoulder-length hair with a round brush" width="900" height="600" loading="lazy">
+          <figcaption>Bouncy blow-dry for a wedding <span>by Sanja</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team" id="team" aria-labelledby="team-title">
+      <div class="wrap team-inner">
+        <figure class="team-photo">
+          <img src="/img/team.webp" alt="Mabel, Jovana and Sanja laughing and holding up scissors and brushes" width="1100" height="733" loading="lazy">
+          <figcaption>Mabel, Jovana and Sanja on a slow Tuesday. Luka is behind the camera, as usual.</figcaption>
+        </figure>
+        <div class="team-copy">
+          <h2 id="team-title">Four chairs, four people who remember how you like it</h2>
+          <p>Mabel opened the studio in 2014 with one chair and a kettle. The kettle is still here. So are most of the clients from that first year.</p>
+          <dl class="people">
+            <div><dt>Mabel</dt><dd>Owner. Colour, balayage and the hard conversations about fringes.</dd></div>
+            <div><dt>Jovana</dt><dd>Curly hair and precision cuts. Trained in dry cutting in Ljubljana.</dd></div>
+            <div><dt>Sanja</dt><dd>Blow-dries, wedding hair and the brightest colours on the street.</dd></div>
+            <div><dt>Luka</dt><dd>Runs the barber corner. Fades, beards and the best hot-towel shave in town.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barber corner -->
+    <section class="barber" aria-labelledby="barber-title">
+      <div class="wrap barber-inner">
+        <div class="barber-copy">
+          <h2 id="barber-title">The barber corner, at the back on the left</h2>
+          <p>Two leather chairs, a black-and-white tiled floor and a radio that only plays old rock. Luka keeps it simple: tell him what you want, or tell him to surprise you.</p>
+          <p>Walk-ins welcome on weekdays before noon. After that, book ahead so you don't end up waiting.</p>
+          <a class="btn btn-dark" href="#book" data-service="Cut and beard" data-who="Luka">Book with Luka</a>
+        </div>
+        <img class="barber-photo" src="/img/barber-corner.webp" alt="Barbershop with three black leather chairs, brick walls and warm pendant lights" width="1100" height="733" loading="lazy">
+      </div>
+    </section>
+
+    <!-- What a visit is like -->
+    <section class="visit-feel wrap" aria-labelledby="feel-title">
+      <img class="feel-photo" src="/img/blowdry.webp" alt="Sanja smiling while blow-drying a client's short hair with a brush" width="750" height="938" loading="lazy">
+      <div class="feel-copy">
+        <h2 id="feel-title">What a visit feels like</h2>
+        <p>An hour here should feel like a break, not an errand. A few things we always do:</p>
+        <ul class="small-things">
+          <li>Tea, coffee or something fizzy as soon as you sit down</li>
+          <li>A ten-minute head massage with every wash</li>
+          <li>Free fringe tidy-ups between visits, no booking needed</li>
+          <li>A booster seat, cartoons and a lollipop for small clients</li>
+          <li>Dogs welcome, as long as they're fine with hairdryers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <h2 id="reviews-title" class="section-title-center">What people say on the way out</h2>
+        <div class="quotes">
+          <blockquote>
+            <p>I came in with a photo and a lot of doubts. Mabel talked me out of half of it, and she was right. Best colour I've ever had.</p>
+            <footer>Ivana, balayage</footer>
+          </blockquote>
+          <blockquote>
+            <p>First place that actually knows what to do with curly hair. Jovana cut it dry, one curl at a time. I almost cried.</p>
+            <footer>Marta, curly cut</footer>
+          </blockquote>
+          <blockquote>
+            <p>Hot towel, straight razor, old rock on the radio. Luka is the reason I don't trust anyone else near my beard.</p>
+            <footer>Stefan, cut and beard</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking + visit info -->
+    <section class="book" id="visit" aria-labelledby="book-title">
+      <div class="wrap book-inner">
+        <div class="book-form-wrap" id="book">
+          <h2 id="book-title">Book a visit</h2>
+          <p>Tell us what you'd like and when suits you. We'll call you back within the hour to confirm a time.</p>
+
+          <form class="book-form" data-book-form novalidate>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" required>
+              <p class="field-error" id="f-name-error" hidden>Add your name so we know who to ask for.</p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone number</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              <p class="field-error" id="f-phone-error" hidden>Add a phone number so we can call you back.</p>
+            </div>
+            <div class="field">
+              <label for="f-service">What would you like?</label>
+              <select id="f-service" name="service">
+                <option>Cut and blow-dry</option>
+                <option>Curly cut</option>
+                <option>Colour or balayage</option>
+                <option>Wash and blow-dry</option>
+                <option>Classic cut</option>
+                <option>Skin fade</option>
+                <option>Cut and beard</option>
+                <option>Hot-towel shave</option>
+                <option>Not sure yet, let's talk</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-who">With</label>
+              <select id="f-who" name="who">
+                <option value="">Whoever is free</option>
+                <option>Mabel</option>
+                <option>Jovana</option>
+                <option>Sanja</option>
+                <option>Luka</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-day">Preferred day</label>
+              <input id="f-day" name="day" type="date">
+              <p class="field-error" id="f-day-error" hidden>Pick today or a later day.</p>
+            </div>
+            <div class="field">
+              <label for="f-time">Time of day</label>
+              <select id="f-time" name="time">
+                <option value="">Any time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>After work</option>
+              </select>
+            </div>
+            <div class="field field-wide">
+              <label for="f-note">Anything we should know? <span class="optional">(optional)</span></label>
+              <textarea id="f-note" name="note" rows="3" placeholder="Last coloured three months ago, sensitive scalp, bringing my son along..."></textarea>
+            </div>
+            <div class="field-wide form-actions">
+              <button class="btn btn-primary" type="submit">Request a time</button>
+              <p class="form-hint">Or call us on <a href="tel:+381215550142">021 555 0142</a></p>
+            </div>
+          </form>
+
+          <div class="book-done" data-book-done hidden tabindex="-1">
+            <h3 data-book-done-title>Request sent</h3>
+            <p data-book-done-text></p>
+            <p class="demo-note">This is a demo site, so nothing was actually sent. On your own site, this request would go straight to your phone or inbox.</p>
+            <button class="btn btn-quiet" type="button" data-book-again>Make another request</button>
+          </div>
+        </div>
+
+        <aside class="info" aria-labelledby="info-title">
+          <h2 id="info-title" class="info-title">Find us</h2>
+          <address>
+            <p class="info-street">Lipova 14, Novi Sad</p>
+            <p>On the corner by the bakery, with the pink door. Free parking on the street after 17:00.</p>
+            <p><a href="tel:+381215550142">021 555 0142</a></p>
+          </address>
+
+          <p class="status status-small" data-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Open Tuesday to Saturday</span></p>
+
+          <table class="hours">
+            <caption class="visually-hidden">Opening hours</caption>
+            <tbody>
+              <tr data-days="1"><th scope="row">Monday</th><td>Closed</td></tr>
+              <tr data-days="2,3,4,5" data-open="9" data-close="20"><th scope="row">Tuesday to Friday</th><td>09:00 to 20:00</td></tr>
+              <tr data-days="6" data-open="9" data-close="16"><th scope="row">Saturday</th><td>09:00 to 16:00</td></tr>
+              <tr data-days="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">Mabel's Chair</p>
+      <p>Hair studio and barber, Lipova 14, Novi Sad</p>
+      <p class="credit">Mabel's Chair is a made-up salon. This demo site was designed and built by
+        <a href="https://milos-milinkov.milos300399.workers.dev" rel="noopener">Miloš Milinkov</a>, who makes websites for local businesses.
+        Photos from <a href="https://unsplash.com" rel="noopener">Unsplash</a>.
+        &copy; <span data-year>2026</span> Miloš Milinkov.</p>
+    </div>
+  </footer>
+</body>
+</html>
